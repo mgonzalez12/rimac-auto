@@ -1,0 +1,10 @@
+
+.colorfondo1{ background-color:  #f7f8fc; height: 90vh;  }
+.fondo{margin-left: 106px;margin-top: 30px;}
+
+/* For 480 Resolution */  
+@media only screen and (min-device-width : 320px) and (max-device-width : 400px)  {
+.fondo{margin-left: -10px !important; margin-top: -65px;}
+.colorfondo1 { background-color: #f7f8fc;height: 33vh;}
+.segurobutton{text-align: center;}
+}

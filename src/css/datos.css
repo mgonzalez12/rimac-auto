@@ -1,0 +1,67 @@
+.uno {
+    height: 22px;
+    width: 22px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgb(104 92 214);
+    color: white;
+  }
+
+  .dos {
+    height: 22px;
+    width: 22px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.295);
+    color: rgba(197, 197, 197, 0.836);
+  }
+
+.textovista{ color: rgba(197, 197, 197, 0.836);}
+.boton{color: red;}
+.nombrecolor{color: red;}
+
+.form-select-lg{border-radius: 5px !important;}
+.bg-light {
+    background-color: #ffffff!important;
+    border-bottom-color:#f7f8fc; border-bottom-style:solid; border-bottom-width:2px; 
+}
+Link{text-decoration: none;}
+#taclick{font-size: 11px;}
+.inpletr{font-size: 14px;}
+.volver{text-decoration: none;}
+.colorfondo3{ background-color:  #f7f8fc; height: 87vh;  }
+.colorfondo2{ background-color:  #f7f8fc; height: 150vh;  }
+.hrstyle{width: 70%;color: #cccccc;}
+
+.card-border{border-radius: 10px; border-color: #f7f8fc;}
+#card-border{border-radius: 10px; border-color: #f7f8fc;}
+.texto1{font-size: 14px; color: rgba(197, 197, 197, 0.836);}
+.ptext{margin-left: 20px;}
+.textsize{font-size: 15px;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {color: #ef7189 !important;}
+.btn-danger{background-color:  #EF3340;}
+
+.fa-check{color: rgb(3, 238, 62);}
+
+
+ /* #imagen{  background-image: url("../../images/usuario.png"); } */
+@media only screen and (min-width: 1600px){
+    .colorfondo3{ background-color:  #f7f8fc; height: 100vh;  }
+
+}
+
+
+/* For 400 Resolution */  
+@media only screen and (min-device-width : 320px) and (max-device-width : 400px)  {
+    html,body{ overflow-x: hidden;}
+    body { overflow-x: hidden;}
+    .colorfondo3{ background-color:  #ffffff; height: 10vh !important;  }
+    .pasos{margin-left: 10px;}
+    .precios{margin-top: -115px;}
+    .continuar{margin-top: 70px  !important;}
+    .colorfondo2 {background-color: #f7f8fc;height: 10vh !important;}
+}

@@ -1,0 +1,161 @@
+.form-check-input:checked {
+    background-color: #2ce70a;
+    border-color: #2ce70a;
+}
+
+.em {
+    border-bottom: 2px solid #000000;
+    }
+.btn-danger{background-color:  #EF3340;}
+
+/* For 1366 Resolution */  
+@media only screen and (min-width: 1000px) and (max-device-width : 1600px){
+    .colorfondo{ background-color:  #ecf0ff;height: 100vh;}
+      h1 {margin-top: 0px; }
+    .imagefondo{  width: 100.4%; }
+    .card {  border-radius: 0;}
+    .vcolor{ color: red ;}
+    .vsegurocolor{   color: darkgray;    margin-top: -5px;}
+    .ptitle{ color: red ; margin-right: 133px;  margin-top: -9px;}
+    .centerTitle{text-align: center; margin-top: -35px;}
+    .colortexto{ color: rgb(163 161 161);}
+    .textprinc{ text-align: center; margin-top: 45px;}
+    .texto{ font-size: 14px;}
+    .textseguro{ margin-right:226px;}
+    .numerostyle1{text-align: right;}
+    .telblue{color: blue;margin-left: 10px; margin-right: 40px;}
+    .form-control-lg{border-radius: 0px;}
+   .letrasselect{font-size: 14px;}
+   .text-ta{font-size: 14px;}
+   .numdoc{ margin-left: -24px;width: 112%;}
+   .form-select-lg{border-radius: 0px;}
+}
+
+@media only screen and (min-device-width : 500px) and (max-device-width : 699px)  {
+    html,body{ overflow-x: hidden;}
+    body { overflow-x: hidden;}
+
+    .colorfondo{ background-color:  #f7f8fc; height: 48vh;  }
+    .imagefondo{ width: 34%;margin-top: 50px; margin-left: 371px; } 
+    .vcolor{  color: red ;}
+    .vsegurocolor{color: darkgray;}   
+    .colortexto{  color: rgb(163 161 161); }
+    .telblue{color: blue;margin-left: 10px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 12px;}
+    .numdoc{ margin-left: -24px;width: 112%;}
+    .form-select-lg{border-radius: 0px;}
+    .numdoc{ margin-left: 0px;width: 100%;margin-top: 15px;}
+    .centerTitle{    margin-top: -329px;margin-left: 20px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+}
+
+@media only screen and (min-device-width : 700px) and (max-device-width : 800px)  {
+    .colorfondo{ background-color:  #ecf0ff;height: 100vh; top: 0;}
+    .imagefondo{  width: 100.4%;  }
+    .card {  border-radius: 0;}
+    .vcolor{ color: red ;}
+    .vsegurocolor{  color: darkgray; margin-right: 24px;}
+    .ptitle{ color: red ;margin-right: 145px;}
+    .centerTitle{ text-align: center;}
+    .colortexto{  color: rgb(163 161 161);}
+    .numerostyle1{text-align: right;}
+    .telblue{color: blue;margin-left: 10px;margin-right: 40px;}
+    .form-control-lg{border-radius: 0px; width: 174%;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 12px;width: 210%;}
+    .numdoc{ margin-left: 13px; width: 208%;}
+    .form-select-lg{border-radius: 0px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+}
+
+@media only screen and (min-device-width : 800px) and (max-device-width : 1024px)  {
+    .colorfondo{ background-color:  #ecf0ff;height: 100vh; top: 0;}
+    .imagefondo{  width: 100.4%;  }
+    .card {  border-radius: 0;}
+    .vcolor{ color: red ;}
+    .vsegurocolor{  color: darkgray; margin-right: 24px;}
+    .ptitle{ color: red ;margin-right: 145px;}
+    .centerTitle{ text-align: center;}
+    .colortexto{  color: rgb(163 161 161);}
+    .numerostyle1{text-align: right;}
+    .telblue{color: blue;margin-left: 10px;margin-right: 40px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 14px;}
+    .numdoc{ margin-left: -24px;width: 118%;}
+    .form-select-lg{border-radius: 0px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+}
+
+/* For 480 Resolution */  
+@media only screen and (min-device-width : 320px) and (max-device-width : 400px)  {
+    html,body{ overflow-x: hidden;}
+    body { overflow-x: hidden;}
+
+    .colorfondo{ background-color:  #f7f8fc; height: 20vh;  }
+    .imagefondo{ width: 34%;margin-top: 50px; margin-left: 258px; } 
+    .vcolor{  color: red ;}
+    .vsegurocolor{color: darkgray;}   
+    .colortexto{  color: rgb(163 161 161); }
+    .telblue{color: blue;margin-left: 10px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 12px;}
+    .numdoc{ margin-left: -24px;width: 112%;}
+    .form-select-lg{border-radius: 0px;}
+    .numdoc{ margin-left: 0px;width: 100%;margin-top: 15px;}
+    .centerTitle{margin-top: -246px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+    .loquiero{ background-color: #EF3340; width: 60%; margin-left: 120px; margin-top: -50px !important;}
+}
+
+@media only screen and (min-device-width : 401px) and (max-device-width : 480px)  {
+    html,body{ overflow-x: hidden;}
+    body { overflow-x: hidden;}
+
+    .colorfondo{ background-color:  #f7f8fc; height: 48vh;  }
+    .imagefondo{ width: 34%;margin-top: 50px; margin-left: 272px; } 
+    .vcolor{  color: red ;}
+    .vsegurocolor{color: darkgray;}   
+    .colortexto{  color: rgb(163 161 161); }
+    .telblue{color: blue;margin-left: 10px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 12px;}
+    .numdoc{ margin-left: -24px;width: 112%;}
+    .form-select-lg{border-radius: 0px;}
+    .numdoc{ margin-left: 0px;width: 100%;margin-top: 15px;}
+    .centerTitle{margin-top: -244px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+    .loquiero { background-color: #EF3340; width: 60%; margin-left: 120px; margin-top: -50px !important;}
+}
+
+
+@media only screen and (min-width: 1600px){
+    .colorfondo{ background-color:  #ecf0ff; height: auto;  }
+    h1 {margin-top: 0px; }
+    .imagefondo{  width: 100.4%; }
+    .card {  border-radius: 0;}
+    .vcolor{ color: red ;}
+    .vsegurocolor{color: darkgray;  margin-top: -5px; }
+    .ptitle{color: red ; margin-right: 133px; margin-top: -9px;}
+    .centerTitle{text-align: center; margin-top: -35px;}
+    .colortexto{ color: rgb(163 161 161);}
+    .textprinc{text-align: center; margin-top: 45px;  }
+    .texto{font-size: 14px;}
+    .textseguro{ margin-right:226px;}
+    .numerostyle1{text-align: right;}
+    .telblue{color: blue; margin-left: 10px;margin-right: 40px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 14px;}
+    .numdoc{ margin-left: -24px;width: 109%;}
+    .form-select-lg{border-radius: 0px;}
+}

@@ -1,0 +1,11 @@
+
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+    border-bottom-color:#f7f8fc; border-bottom-style:solid; border-bottom-width:2px; 
+
+}
