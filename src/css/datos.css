@@ -29,10 +29,10 @@
     background-color: #ffffff!important;
     border-bottom-color:#f7f8fc; border-bottom-style:solid; border-bottom-width:2px; 
 }
-Link{text-decoration: none;}
-#taclick{font-size: 11px;}
+a{text-decoration: none;}
+#taclick{font-size: 11px; text-decoration: none;}
 .inpletr{font-size: 14px;}
-.volver{text-decoration: none;}
+
 .colorfondo3{ background-color:  #f7f8fc; height: 87vh;  }
 .colorfondo2{ background-color:  #f7f8fc; height: 150vh;  }
 .hrstyle{width: 70%;color: #cccccc;}
@@ -47,15 +47,26 @@ Link{text-decoration: none;}
 
 .fa-check{color: rgb(3, 238, 62);}
 
+Link{text-decoration: none;display: inline-block;}
+.volveratras{text-decoration: none;}
+
 
  /* #imagen{  background-image: url("../../images/usuario.png"); } */
 @media only screen and (min-width: 1600px){
     .colorfondo3{ background-color:  #f7f8fc; height: 100vh;  }
-
+    .volver{ text-align: left;margin-top: -19px;margin-left: 30px;}
 }
 
+@media only screen and (min-width: 1000px) and (max-device-width : 1600px){
+  .volver{ text-align: left;margin-top: -19px;margin-left: 30px;}
+}
 
-/* For 400 Resolution */  
+@media only screen and (min-device-width : 280px) and (max-device-width : 319px)  {
+  .colorfondo3 {background-color: #f7f8fc;height: 7vh;}
+  .btn-danger {background-color: #EF3340;}
+.continuar{margin-top: 70px  !important;}
+.colorfondo2 {background-color: #f7f8fc;height: 10vh !important;}
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 400px)  {
     html,body{ overflow-x: hidden;}
     body { overflow-x: hidden;}

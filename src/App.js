@@ -23,7 +23,7 @@ function App() {
           <Route path="/">
             <Home />
           </Route>
-        
+          <Route render={() => <h1>Not found!</h1>} />
         </Switch>
       </div>
     </Router>

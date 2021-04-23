@@ -1,33 +1,39 @@
 import React from 'react';
 import '../css/style.css';
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Datos extends React.Component {
+  
     constructor() {
         super();
         this.state = {
-            name: '',
-          lname: '',
-          email: '',
-          password: '',
-          confirmPassword: '',
-          formSuccess: false
+            documento: "",
+            celular: "",
+            placa: "" 
         }
-        this.handleSubmit = this.handleSubmit.bind(this);
+       
       }
     
-      handleUserInput(e) {
-        const name = e.target.name;
-        const value = e.target.value;
-        this.setState({ [name]: value });
-      }
+      handledocumentoChange = evt => {
+        this.setState({ documento: evt.target.value });
+      };
     
-      handleSubmit(e) {
-        e.preventDefault();
-      }
+      handlecelularChange = evt => {
+        this.setState({ celular: evt.target.value });
+      };
+
+      handleplacaChange = evt => {
+        this.setState({ placa: evt.target.value });
+      };
     
+      handleSubmit = () => {
+        this.history.push('/sinDato');
+        // this.props.history.push("/sinDato");
+      };
 
     render() {
+      const { documento, celular ,placa} = this.state;
+       const isEnabled = documento.length > 0 && celular.length > 0 && placa.length > 0;
     return (
         <div >
             <div className="container mt-5">
@@ -37,7 +43,7 @@ class Datos extends React.Component {
                    <h3>Déjanos tus datos</h3>
                         <div className="card border-0">
                             <div className="card-body">
-                            <form >
+                            <form  onSubmit={this.handleSubmit} >
                             <div className="">
                                 <div className="row">
                                     <div className="col-sm-4">
@@ -47,19 +53,30 @@ class Datos extends React.Component {
                                         </select>
                                     </div>
                                     <div className="col-sm-8">
-                                        <input className="form-control form-control-lg numdoc" type="text" placeholder="Nro. de doc" />
+                                        <input className="form-control form-control-lg numdoc" 
+                                        type="text" placeholder="Nro. de doc" 
+                                        value={this.state.documento}
+                                        onChange={this.handledocumentoChange}
+                                        pattern="^[0-9]+" min="6" title="Solo Número"
+                                        required
+                                        />
                                     </div>
                                 </div>
                                 </div>
-                                 <input className="form-control form-control-lg mt-3" type="text" placeholder="Celular" 
-                                 value={this.state.name}
-                                 onChange={(event) => this.handleUserInput(event)}
-                                  required pattern="[0-9]+"/>
+                                 <input className="form-control form-control-lg mt-3" 
+                                 type="text" placeholder="Celular" 
+                                 value={this.state.celular}
+                                 onChange={this.handlecelularChange}
+                                  required pattern="[0-9]+"  min="9" title="Solo Número"/>
 
-                                 <input className="form-control form-control-lg mt-3" type="text" placeholder="Placa"  required pattern="[A-Za-z0-9]+" />
+                                 <input className="form-control form-control-lg mt-3" 
+                                 type="text" placeholder="Placa"
+                                 value={this.state.placa}
+                                 onChange={this.handleplacaChange}  
+                                 required pattern="[A-Za-z0-9]+" />
                             
                                     <div className="form-check mt-2">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <input className="form-check-input" type="checkbox"  id="flexCheckDefault" required />
                                              <label className="form-check-label text-ta" for="flexCheckDefault">
                                                Acepto la <span className="em">Política de Protección de Datos <br/>
                                                Personales</span> y los <span className="em">Términis y Condiciones</span>
@@ -67,7 +84,9 @@ class Datos extends React.Component {
                                     </div>
                               
 
-                                 <Link to="/sinDato" className="btn btn-danger btn-lg mt-3" disabled={!this.state.name} >COTÍZALO</Link>
+                                 <Link to="/sinDato">
+                                    <button disabled={!isEnabled}   className="btn btn-danger btn-lg mt-3">COTÍZALO</button>
+                                  </Link>
                                  </form>
                             </div>
                         </div>

@@ -8,6 +8,9 @@
     }
 .btn-danger{background-color:  #EF3340;}
 
+html,body{ overflow-x: hidden;}
+body { overflow-x: hidden;}
+
 /* For 1366 Resolution */  
 @media only screen and (min-width: 1000px) and (max-device-width : 1600px){
     .colorfondo{ background-color:  #ecf0ff;height: 100vh;}
@@ -92,8 +95,36 @@
     .progresototal{width: 100%;}
 }
 
-/* For 480 Resolution */  
-@media only screen and (min-device-width : 320px) and (max-device-width : 400px)  {
+@media only screen and (min-device-width : 280px) and (max-device-width : 319px)  {
+    .vcolor{  color: red ;}
+    .continuar {margin-top: 70px !important;}
+    .continuar{margin-top: 70px  !important;}
+    .colorfondo2 {background-color: #f7f8fc;height: 10vh !important;}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 370px)  {
+    html,body{ overflow-x: hidden;}
+    body { overflow-x: hidden;}
+
+    .colorfondo{ background-color:  #f7f8fc; height: 48vh;  }
+    .imagefondo{ width: 34%;margin-top: 50px; margin-left: 258px; } 
+    .vcolor{  color: red ;}
+    .vsegurocolor{color: darkgray;}   
+    .colortexto{  color: rgb(163 161 161); }
+    .telblue{color: blue;margin-left: 10px;}
+    .form-control-lg{border-radius: 0px;}
+    .letrasselect{font-size: 14px;}
+    .text-ta{font-size: 12px;}
+    .numdoc{ margin-left: -24px;width: 112%;}
+    .form-select-lg{border-radius: 0px;}
+    .numdoc{ margin-left: 0px;width: 100%;margin-top: 15px;}
+    .centerTitle{margin-top: -246px;}
+    .progreso{width: 50%;}
+    .progresototal{width: 100%;}
+    .loquiero{ background-color: #EF3340; width: 60%; margin-left: 120px; margin-top: -50px !important;}
+}
+
+@media only screen and (min-device-width : 371px) and (max-device-width : 400px)  {
     html,body{ overflow-x: hidden;}
     body { overflow-x: hidden;}
 

@@ -5,6 +5,27 @@ import ImageAuto from '../images/auto.png';
 
 class DatoDetalle extends React.Component {
 
+    constructor(props) {
+       super(props)
+       this.state = { 
+           items:[],
+           loading:false
+        }
+    }
+
+    componentDidMount(){
+        fetch("https://randomuser.me/api/")
+        .then((response) => response.json())
+        .then((response) => {
+            this.setState({
+                items:response.results,
+                loading:true
+            })
+        })
+    }
+
+
+
     render() {
         return (
             <div className="col-sm">
@@ -13,24 +34,21 @@ class DatoDetalle extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-12">
-                                   <Link to="/" ><i className="fas fa-undo-alt boton d-none d-sm-none d-md-block"></i> <span className="volver d-none d-sm-none d-md-block">Volver</span> </Link>
+                                   <Link to="/" className="volveratras" ><i className="fas fa-undo-alt boton d-none d-sm-none d-md-block "></i> <span className="volver d-none d-sm-none d-md-block">Volver</span> </Link>
                                 <span className="mt-5"></span>
 
-                                    <h1>¡Hola, <span className="nombrecolor">Juan</span></h1>
+                                    <h1>¡Hola, <span className="nombrecolor">{this.state.items.map(item => ( <i> {item.name.first} </i>))}  </span></h1>
                                     <p>Completa los datos de tu auto</p>
 
                                 </div>
                                 <div className="col-sm">
                                     <select className="form-select form-select-lg" aria-label="Default select example">
-                                        <option value="2017" className="letrasselect">2017</option>
-                                        <option value="2018" className="letrasselect">2018</option>
                                         <option value="2019" className="letrasselect">2019</option>
                                         <option value="2020" className="letrasselect">2020</option>
                                     </select>
 
                                     <select className="form-select form-select-lg mt-4" aria-label="Default select example" required>
                                         <option value="2017" className="letrasselect">Wolkswagen</option>
-                                        <option value="2018" className="letrasselect">Ford</option>
                                     </select>
 
                                 <div>

@@ -16,7 +16,7 @@ class Detalle extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-12">
-                                    <Link to="/" ><i class="fas fa-undo-alt boton d-none d-sm-none d-md-block"></i> <span className="volver d-none d-sm-none d-md-block">Volver</span> </Link>
+                                    <Link to="/sinDato" className="volveratras" ><i class="fas fa-undo-alt boton d-none d-sm-none d-md-block"></i> <span className="volver d-none d-sm-none d-md-block">Volver</span> </Link>
                                     <span className="mt-5"></span>
 
                                     <h1>Mira las coberturas</h1>
@@ -82,7 +82,7 @@ class Detalle extends React.Component {
                                                             <h6>Choque y/o pasarte la luz <br/>roja</h6>
                                                             <div class="form-check form-switch">
                                                                 <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked"  />
-                                                                <label className="form-check-label" for="flexSwitchCheckChecked">Agregar</label>
+                                                                <label className="form-check-label" >Agregar</label>
                                                             </div>
                                                     </div>
 
