@@ -67,7 +67,7 @@ class Detalle extends React.Component {
                                                             <h6>Llanta robada</h6>
                                                             <div className="form-check form-switch">
                                                                 <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
-                                                                <label className="form-check-label" for="flexSwitchCheckChecked">Quitar</label>
+                                                                <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Quitar</label>
                                                             </div>
                                                     He salido de casa a las cuatro menos cinco para ir a la academia de ingles de mi pueblo (Sant Cugat, al lado de Barcelona) con mi bici, na llego a la academia que está en el centro del pueblo en una plaza medio-grande y dejo donde siempre la bici atada con una pitón a un sitio de esos de poner las bicis y mucho
                                                         </div>

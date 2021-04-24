@@ -8,6 +8,12 @@ class DatoDetalle extends React.Component {
     constructor(props) {
        super(props)
        this.state = { 
+           fecha: '2019',
+           fecha1: '2020',
+           marca:"Wolkswagen",
+           option1:"option1",
+           option2:"option2",
+           precio:"$14,300",
            items:[],
            loading:false
         }
@@ -23,7 +29,6 @@ class DatoDetalle extends React.Component {
             })
         })
     }
-
 
 
     render() {
@@ -43,26 +48,26 @@ class DatoDetalle extends React.Component {
                                 </div>
                                 <div className="col-sm">
                                     <select className="form-select form-select-lg" aria-label="Default select example">
-                                        <option value="2019" className="letrasselect">2019</option>
-                                        <option value="2020" className="letrasselect">2020</option>
+                                        <option value={this.state.fecha} className="letrasselect">{this.state.fecha}</option>
+                                        <option value={this.state.fecha1} className="letrasselect">{this.state.fecha1}</option>
                                     </select>
 
                                     <select className="form-select form-select-lg mt-4" aria-label="Default select example" required>
-                                        <option value="2017" className="letrasselect">Wolkswagen</option>
+                                        <option value={this.state.marca} className="letrasselect">{this.state.marca}</option>
                                     </select>
 
                                 <div>
                                     <div className="form-check mt-2 ">
-                                            <label className="form-check-label text-ta form-check-inline" for="flexCheckDefault">
+                                            <label className="form-check-label text-ta form-check-inline" htmlFor="flexCheckDefault">
                                                 ¿Tu auto es a gas?
                                         </label>
                                             <div className="form-check form-check-inline">
-                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-                                                <label className="form-check-label" for="inlineRadio1">Si</label>
+                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value={this.state.option1} />
+                                                <label className="form-check-label" htmlFor="inlineRadio1">Si</label>
                                             </div>
                                             <div className="form-check form-check-inline">
-                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked />
-                                                <label className="form-check-label" for="inlineRadio2">No</label>
+                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value={this.state.option2} defaultChecked  />
+                                                <label className="form-check-label" htmlFor="inlineRadio2">No</label>
                                             </div>
                                     </div>
                                 </div>
@@ -76,7 +81,7 @@ class DatoDetalle extends React.Component {
                                         <div className="col-sm">
                                             <div className="input-group mb-3 precios">
                                                 <button type="button" className="btn btn-outline-secondary btn-lg "> - </button>
-                                                <input type="text" className="form-control text-center form-control-lg inpletr " aria-label="Text input with segmented dropdown button" value="$14,300" />
+                                                <input type="text" className="form-control text-center form-control-lg inpletr " aria-label="Text input with segmented dropdown button" value={this.state.precio} />
                                                 <button type="button" className="btn btn-outline-secondary btn-lg "> + </button>
                                             </div>
                                         </div>

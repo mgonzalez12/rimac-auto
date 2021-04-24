@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/style.css';
-import { Link } from "react-router-dom";
+import { Link ,withRouter } from "react-router-dom";
 
 class Datos extends React.Component {
   
@@ -25,11 +25,23 @@ class Datos extends React.Component {
       handleplacaChange = evt => {
         this.setState({ placa: evt.target.value });
       };
+
+      handleSubmit = async e => {
+        e.preventDefault();
+        // this.setState({ loading: true, error: null });
     
-      handleSubmit = () => {
-        this.history.push('/sinDato');
-        // this.props.history.push("/sinDato");
+        try {
+          // await api.badges.create(this.state.form);
+          // this.setState({ loading: false });
+           console.log("Me diste click")
+          this.props.history.push('/sinDato');
+          
+    
+        } catch (error) {
+          // this.setState({ loading: false, error: error });
+        }
       };
+
 
     render() {
       const { documento, celular ,placa} = this.state;
@@ -76,17 +88,17 @@ class Datos extends React.Component {
                                  required pattern="[A-Za-z0-9]+" />
                             
                                     <div className="form-check mt-2">
-                                        <input className="form-check-input" type="checkbox"  id="flexCheckDefault" required />
-                                             <label className="form-check-label text-ta" for="flexCheckDefault">
+                                        <input className="form-check-input" type="checkbox"  id="flexCheckDefault"  />
+                                             <label className="form-check-label text-ta" htmlFor="flexCheckDefault">
                                                Acepto la <span className="em">Política de Protección de Datos <br/>
                                                Personales</span> y los <span className="em">Términis y Condiciones</span>
                                         </label>
                                     </div>
                               
 
-                                 <Link to="/sinDato">
+                                 {/* <Link to="/sinDato"></Link> */}
                                     <button disabled={!isEnabled}   className="btn btn-danger btn-lg mt-3">COTÍZALO</button>
-                                  </Link>
+                                  
                                  </form>
                             </div>
                         </div>
@@ -99,4 +111,4 @@ class Datos extends React.Component {
     }
 }
     
-export default Datos;
+export default withRouter(Datos);
